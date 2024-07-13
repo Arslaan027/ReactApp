@@ -1,9 +1,9 @@
 function Navbar() {
   return (
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+    <div className="container">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             Healthy Food Items
           </a>
         </div>

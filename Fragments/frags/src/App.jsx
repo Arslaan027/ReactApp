@@ -1,15 +1,14 @@
 import "./App.css";
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/nav";
-import Listgrp from "./components/listGrp";
+import Listitem from "./components/list";
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <Navbar />
-      <Listgrp />
-    </React.Fragment>
+      <Listitem />
+    </>
   );
 }
 
