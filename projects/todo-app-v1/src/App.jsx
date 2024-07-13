@@ -12,7 +12,7 @@ function App() {
             />
           </div>
           <div class="col-sm-2">
-            <input type="date" />
+            <input style={{ width: "90%" }} type="date" />
           </div>
           <div class="col-sm-1">
             <button type="button" class="btn btn-primary">
