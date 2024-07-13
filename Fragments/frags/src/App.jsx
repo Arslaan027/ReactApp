@@ -1,15 +1,16 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/nav";
-import Listitem from "./components/list";
+import Listitem from "./components/listItem";
 import ErrorMsg from "./components/errorMsg";
 
 function App() {
+  let foodItems = ["Dal", "Roti", "Bhindi", "Torai", "Sabzi"];
   return (
     <>
       <Navbar />
-      <Listitem />
-      <ErrorMsg />
+      <Listitem aaqa={foodItems} />
+      <ErrorMsg aaqa={foodItems} />
     </>
   );
 }
