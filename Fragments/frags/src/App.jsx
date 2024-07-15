@@ -5,7 +5,7 @@ import Listitem from "./components/listItem";
 import ErrorMsg from "./components/errorMsg";
 
 function App() {
-  let foodItems = ["Dal", "Roti", "Bhindi", "Torai", "Sabzi"];
+  let foodItems = ["aloo", "Dal", "Roti", "Bhindi", "Torai", "Sabzi"];
   return (
     <>
       <Navbar />
