@@ -1,0 +1,11 @@
+.kg-class{
+    background-color: aquamarine;
+    border: 1px solid black;
+    display: block;
+    gap: 5px;
+  }
+  
+  .kg-span{
+    font-weight: 600;
+    color: blue;
+  }
