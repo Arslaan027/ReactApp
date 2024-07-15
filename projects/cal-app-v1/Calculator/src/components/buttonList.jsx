@@ -1,14 +1,31 @@
 import style from "./buttonList.module.css";
 
 function Btnlist() {
-  const Btns = ["", "", "", "", "", "", "", "", "", "", "", ""];
+  const Btns = [
+    "C",
+    "1",
+    "2",
+    "+",
+    "3",
+    "4",
+    "-",
+    "5",
+    "6",
+    "*",
+    "7",
+    "8",
+    "/",
+    "=",
+    "9",
+    "0",
+    ".",
+  ];
   return (
     <>
       <div className={style.buttonsContainer}>
-        <button className={style.mainButton}>C</button>
-        <button className={style.mainButton}>1</button>
-        <button className={style.mainButton}>2</button>
-        <button className={style.mainButton}>3</button>
+        {Btns.map((btn) => (
+          <button className={style.mainButton}>{btn}</button>
+        ))}
       </div>
     </>
   );
