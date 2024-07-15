@@ -1,10 +1,10 @@
 import style from "./display.module.css";
 
-function Dics() {
+function Display() {
   return (
     <>
       <input className={style.display} type="text" />
     </>
   );
 }
-export default Dics;
+export default Display;
