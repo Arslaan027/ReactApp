@@ -1,11 +1,6 @@
-.calculator{
-    width: 230px;
-    border: 1px solid rgba(55, 55, 55);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.display{
-    width: 220px;
-    font-size: 25px;
+.calculator {
+  width: 230px;
+  border: 1px solid rgba(55, 55, 55);
+  border-radius: 10px;
+  padding: 20px;
 }

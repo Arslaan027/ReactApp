@@ -1,18 +1,15 @@
 import style from "./App.module.css";
+import Dics from "./components/Display";
+import Btnlist from "./components/buttonList";
 
 function App() {
   return (
-    <>
+    <center>
       <div className={style.calculator}>
-        <input className={style.display} type="text" />
-        <div id="buttons-container">
-          <button>C</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-        </div>
+        <Dics />
+        <Btnlist />
       </div>
-    </>
+    </center>
   );
 }
 
