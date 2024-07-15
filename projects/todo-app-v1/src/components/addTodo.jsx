@@ -1,5 +1,3 @@
-import style from "./addTodo.module.css";
-
 function Addtodo() {
   return (
     <div className="container-text-center">
