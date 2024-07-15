@@ -1,6 +1,7 @@
+import css from "./todoItem.module.css";
 function Todoitem({ task, date }) {
   return (
-    <div className="container-text-center">
+    <div className={`${css.centerCon} container-text-center`}>
       <div className="row newRow">
         <div className="col-sm-6">{task}</div>
         <div className="col-sm-3">{date}</div>

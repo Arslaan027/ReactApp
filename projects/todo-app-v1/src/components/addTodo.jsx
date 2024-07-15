@@ -1,7 +1,9 @@
+import style from "./addTodo.module.css";
+
 function Addtodo() {
   return (
     <div className="container-text-center">
-      <div className="row newRow">
+      <div className="row">
         <div className="col-sm-6">
           <input
             style={{ width: "80%" }}
