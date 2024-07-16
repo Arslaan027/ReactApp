@@ -6,13 +6,16 @@ import ErrorMsg from "./components/errorMsg";
 import Container from "./components/Container";
 import Input from "./components/Inputfood";
 
-function App() {
+function App({ handleEvent }) {
+  const handleOnChange = (event) => {
+    console.log(event.target.value);
+  };
   let foodItems = ["aloo", "Dal", "Roti", "Bhindi", "Torai", "Sabzi"];
   return (
     <>
       <Container>
         <Navbar />
-        <Input></Input>
+        <Input handleEvent={handleOnChange}></Input>
         <Listitem Items={foodItems} />
         <ErrorMsg Items={foodItems} />
       </Container>

@@ -1,9 +1,6 @@
 import style from "./Inputfood.module.css";
 
-function Input() {
-  const handleOnChange = (event) => {
-    console.log(event.target.value);
-  };
+function Input({ handleEvent }) {
   return (
     <>
       <center>
@@ -11,7 +8,7 @@ function Input() {
           className={style.searchBox}
           placeholder="Enter your food"
           type="text"
-          onChange={(event) => handleOnChange(event)}
+          onChange={handleEvent}
         />
       </center>
     </>
