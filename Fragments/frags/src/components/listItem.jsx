@@ -1,10 +1,10 @@
 import Item from "./item";
 
-function Listitem({ aaqa }) {
+function Listitem({ Items }) {
   return (
     <ul className="list-group list">
-      {aaqa.map((item) => (
-        <Item key={item} aaqa={item} />
+      {Items.map((item) => (
+        <Item key={item} Items={item} />
       ))}
     </ul>
   );

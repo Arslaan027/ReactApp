@@ -3,8 +3,8 @@
   margin: auto;
 }
 
-
-
-.food-heading{
-  background-color: rgb(218, 193, 193);
+.food-heading {
+  text-align: center;
+  padding: 10px;
+  font-weight: bolder;
 }

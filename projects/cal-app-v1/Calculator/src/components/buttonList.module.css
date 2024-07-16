@@ -2,13 +2,20 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 130px;
+  width: 160px;
   gap: 5px;
 }
 
 .mainButton {
   padding: 15px;
   border: 1px solid black;
-  border-radius: 50%;
-  font-weight: 700;
+  border-radius: 10%;
+  font-weight: bolder;
+  cursor: pointer;
+  background: transparent;
+  gap: 10px;
+}
+
+.mainButton:hover {
+  background-color: rgb(201, 201, 201);
 }
