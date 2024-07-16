@@ -1,5 +1,9 @@
 import css from "./item.module.css";
 
+const handleBuyButton = ({ Items }) => {
+  console.log(`${Items}` + " bought");
+};
+
 function Item({ Items }) {
   return (
     <>
@@ -7,7 +11,7 @@ function Item({ Items }) {
         <span className={css["kg-span"]}>{Items}</span>
         <button
           className={` ${css.buttons} btn btn-success`}
-          onClick={() => console.log(`${Items}` + " bought")}
+          onClick={() => handleBuyButton({ Items })}
         >
           Buy
         </button>
