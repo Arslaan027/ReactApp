@@ -8,7 +8,7 @@ function Item({ Items, bought, handleBuyButton }) {
       >
         <span className={css["kg-span"]}>{Items}</span>
         <button
-          className={` ${css.buttons} btn btn-success`}
+          className={`${css.buttons} btn btn-success`}
           onClick={handleBuyButton}
         >
           Buy
