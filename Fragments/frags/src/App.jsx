@@ -10,13 +10,13 @@ import { useState } from "react";
 function App({ onEnter }) {
   let [currentText, setTextState] = useState("value given by the User");
 
-  let [foodItems, setFoodItems] = useState(["Bhindi", "Torai", "Sabzi"]);
+  let [foodItems, setFoodItems] = useState([]);
 
   const handleOnChange = (event) => {
-    console.log(event);
     if (event.key === "Enter") {
-      let food = event.target.value;
-      console.log(`new Food item ` + food);
+      let newfoodItem = event.target.value;
+      let newItems = [...foodItems, newfoodItem];
+      setFoodItems(newItems);
     }
   };
   return (
