@@ -4,6 +4,7 @@ import Navbar from "./components/nav";
 import Listitem from "./components/listItem";
 import ErrorMsg from "./components/errorMsg";
 import Container from "./components/Container";
+import Input from "./components/Inputfood";
 
 function App() {
   let foodItems = ["aloo", "Dal", "Roti", "Bhindi", "Torai", "Sabzi"];
@@ -11,6 +12,7 @@ function App() {
     <>
       <Container>
         <Navbar />
+        <Input></Input>
         <Listitem Items={foodItems} />
         <ErrorMsg Items={foodItems} />
       </Container>
