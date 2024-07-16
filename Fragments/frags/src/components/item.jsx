@@ -1,9 +1,11 @@
 import css from "./item.module.css";
 
-function Item({ Items, handleBuyButton }) {
+function Item({ Items, bought, handleBuyButton }) {
   return (
     <>
-      <li className={`${css["kg-class"]} list-group-item`}>
+      <li
+        className={`${css["kg-class"]} list-group-item ${bought && "active"} `}
+      >
         <span className={css["kg-span"]}>{Items}</span>
         <button
           className={` ${css.buttons} btn btn-success`}
