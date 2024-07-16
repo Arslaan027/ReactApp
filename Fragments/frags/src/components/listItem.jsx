@@ -7,7 +7,7 @@ function Listitem({ Items, handleBuyButton }) {
         <Item
           key={item}
           Items={item}
-          handleBuyButton={(event) => console.log("you bought " + `${Item}`)}
+          handleBuyButton={(event) => console.log("you bought " + `${item}`)}
         />
       ))}
     </ul>

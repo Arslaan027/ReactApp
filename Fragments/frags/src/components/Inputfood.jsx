@@ -1,6 +1,6 @@
 import style from "./Inputfood.module.css";
 
-function Input({ handleEvent }) {
+function Input({ onEnter }) {
   return (
     <>
       <center>
@@ -8,7 +8,7 @@ function Input({ handleEvent }) {
           className={style.searchBox}
           placeholder="Enter your food"
           type="text"
-          onChange={handleEvent}
+          onKeyDown={onEnter}
         />
       </center>
     </>
