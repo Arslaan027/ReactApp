@@ -1,6 +1,11 @@
 import style from "./Inputfood.module.css";
 
-function Input({ onEnter }) {
+function Input({ value, onChange, onEnter }) {
+  const handleKeyDown= (event) => {
+    if(event.key === "Enter"){
+      onEnter(event);
+    }
+  };
   return (
     <>
       <center>
@@ -8,7 +13,9 @@ function Input({ onEnter }) {
           className={style.searchBox}
           placeholder="Enter your food"
           type="text"
-          onKeyDown={onEnter}
+          value={value}
+          onChange={onChange}
+          onKeyDown={handleKeyDown}
         />
       </center>
     </>
