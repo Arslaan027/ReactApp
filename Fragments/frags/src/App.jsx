@@ -7,27 +7,30 @@ import Container from "./components/Container";
 import Input from "./components/Inputfood";
 import { useState } from "react";
 
-function App({ onEnter, newEnter }) {
-  let [currentText, setTextState] = useState("hello");
-  let [foodItems, setFoodItems] = useState([]);
+function App() {
+  const [foodItems, setFoodItems] = useState([]);
+  const [inputText, setInputText] = useState("");
 
-  function inputEmpty() {
-    setTextState(" ");
-  }
+  const handleChange = (event) => {
+    setInputText(event.target.value);
+  };
 
-  const handleOnChange = (event) => {
+  const handleEnter = (event) => {
     if (event.key === "Enter") {
       let newfoodItem = event.target.value;
-      let newItems = [...foodItems, newfoodItem];
-      setFoodItems(newItems);
-      setTextState(" ");
+      setFoodItems([...foodItems, newfoodItem]);
+      setInputText("");
     }
   };
   return (
     <>
       <Container>
         <Navbar />
-        <Input onEnter={handleOnChange} newEnter={inputEmpty}></Input>
+        <Input
+          value={inputText}
+          onEnter={handleEnter}
+          onChange={handleChange}
+        ></Input>
 
         <Listitem Items={foodItems} />
         <ErrorMsg Items={foodItems} />
