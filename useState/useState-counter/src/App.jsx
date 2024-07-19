@@ -9,7 +9,7 @@ function App() {
   };
 
   const handlePlusButton = () => {
-    setCount(count + 1);
+    setCount((prev) => prev + 1);
   };
 
   const resetButtonHandle = () => {
