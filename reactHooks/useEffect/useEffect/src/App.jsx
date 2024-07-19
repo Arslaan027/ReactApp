@@ -27,7 +27,7 @@ function App() {
     setTimeout(() => {
       setCount((prev) => prev + 1);
       setCurrentEmployeeIndex((prevIndex) => (prevIndex + 1) % employee.length);
-    }, 1000);
+    }, 2000);
   };
 
   useEffect(Timer, [count]);
@@ -37,7 +37,7 @@ function App() {
       <div className="flex justify-center">
         <p className="text-center mt-[50vh] text-2xl px-5 py-4 bg-orange-500 w-[80%]  rounded-3xl">
           Counter{" "}
-          <span className="bg-blue-500 px-4 py-2 rounded-xl">{count}</span> Name
+          <span className="bg-blue-500 px-4 py-2 rounded-xl">{currentEmployeeIndex + 1}</span> Name
           of the Employee is{" "}
           <span className="bg-blue-500 px-4 py-2 rounded-xl">
             {employee[currentEmployeeIndex].name}
