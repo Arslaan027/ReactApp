@@ -10,11 +10,10 @@ import { useState } from "react";
 function App() {
   const [foodItems, setFoodItems] = useState([]);
   const [inputText, setInputText] = useState("");
-  
 
   const handleChange = (event) => {
     setInputText(event.target.value);
-  }
+  };
 
   const handleEnter = (event) => {
     if (event.key === "Enter") {
@@ -27,10 +26,10 @@ function App() {
     <>
       <Container>
         <Navbar />
-        <Input value={inputText} 
-        onEnter={handleEnter}
-        onChange={handleChange}  
-        
+        <Input
+          value={inputText}
+          onEnter={handleEnter}
+          onChange={handleChange}
         ></Input>
 
 

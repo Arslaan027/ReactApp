@@ -1,8 +1,8 @@
 import style from "./Inputfood.module.css";
 
 function Input({ value, onChange, onEnter }) {
-  const handleKeyDown= (event) => {
-    if(event.key === "Enter"){
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
       onEnter(event);
     }
   };
