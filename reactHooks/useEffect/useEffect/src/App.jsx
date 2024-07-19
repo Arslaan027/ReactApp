@@ -27,7 +27,7 @@ function App() {
     setTimeout(() => {
       setCount((prev) => prev + 1);
       setCurrentEmployeeIndex((prevIndex) => (prevIndex + 1) % employee.length);
-    }, 2000);
+    }, 1000);
   };
 
   useEffect(Timer, [count]);
